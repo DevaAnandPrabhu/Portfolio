@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import img1 from "./assets/img1.jpg";
+import img2 from "./assets/img2.avif";
+import profile from "./assets/profile.jpg";
 import { 
   Github, 
   Linkedin, 
@@ -313,7 +316,7 @@ export default function App() {
                   3. The code below will automatically pick it up
                 */}
                 <img 
-                  src="\src\profile.JPG" 
+                  src={profile} 
                   alt="Deva Anand Prabhu"
                   className="w-full h-full object-cover"
                   onError={(e) => {
@@ -391,7 +394,7 @@ export default function App() {
             <div className="grid grid-cols-2 gap-4">
               <div className="space-y-4">
                 <div className="h-48 rounded-3xl bg-zinc-100 overflow-hidden">
-                  <img src="\src\img1.jpg" className="w-full h-full object-cover duration-500" referrerPolicy="no-referrer" />
+                  <img src={img1} className="w-full h-full object-cover duration-500" referrerPolicy="no-referrer" />
                 </div>
                 <div className="h-64 rounded-3xl bg-brand-500 flex items-center justify-center p-8 text-white">
                    <Terminal size={48} />
@@ -402,7 +405,7 @@ export default function App() {
                    <Database size={48} />
                 </div>
                 <div className="h-48 rounded-3xl bg-zinc-100 overflow-hidden">
-                  <img src="\src\img2.avif" className="w-full h-full object-cover duration-500" referrerPolicy="no-referrer" />
+                  <img src={img2} className="w-full h-full object-cover duration-500" referrerPolicy="no-referrer" />
                 </div>
               </div>
             </div>
