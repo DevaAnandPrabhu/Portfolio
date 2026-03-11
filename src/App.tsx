@@ -81,15 +81,20 @@ const DATA = {
       ]
     },
     {
-      title: "Data Leakage Detection",
-      description: "A system to detect unauthorized data leaks using guilt modeling.",
-      tech: ["JSP", "Servlets", "MySQL", "Apache Tomcat"],
+      title: "AI Job Assistant",
+      description: "An AI-powered job search platform for students to analyze resumes, browse live job listings, and receive personalized job alerts.",
+      tech: ["React.js", "Flask", "Python", "Groq Ai", "JWT", "Flask-Bcrypt","SqlAlchemy"],
+      GitHub: https://github.com/DevaAnandPrabhu/ai-job-assistant
+      Live: https://ai-job-assistant-bay.vercel.app
       highlights: [
-        "Developed a system to detect unauthorized data leaks.",
-        "Deployed on Apache Tomcat.",
-        "Utilized MySQL for secure data storage."
+        "Built AI resume analyzer using Groq Llama 3 to generate ATS scores, skill gaps, and grammar feedback.",
+        "Developed RESTful APIs with Flask for authentication, resume parsing, and job search.",
+        "Integrated JSearch API to fetch live job listings from Chennai, Bangalore, Mumbai, and worldwide.",
+        "Implemented JWT-based authentication with secure login, registration, and protected routes.",
+        "Deployed frontend on Vercel and backend on Render."
       ]
-    }
+    },
+
   ],
   certifications: [
     "Python Full Stack Developer",
