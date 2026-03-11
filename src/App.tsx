@@ -90,7 +90,8 @@ const DATA = {
         "Integrated JSearch API to fetch live job listings from Chennai, Bangalore, Mumbai, and worldwide.",
         "Implemented JWT-based authentication with secure login, registration, and protected routes.",
         "Deployed frontend on Vercel and backend on Render."
-      ]
+      ],
+      liveLink: "https://ai-job-assistant-bay.vercel.app"
     },
 
   ],
@@ -523,12 +524,18 @@ export default function App() {
                 className="group relative rounded-[40px] bg-zinc-800 border border-zinc-700 p-8 md:p-12 hover:border-brand-500/50 transition-all duration-500"
               >
                 <div className="flex justify-between items-start mb-8">
-                  <div className="text-xs font-mono text-brand-400 uppercase tracking-widest">Project {idx + 1}</div>
-                  <div className="flex gap-4">
-                    <Github className="text-zinc-500 hover:text-white cursor-pointer transition-colors" size={20} />
-                    <ExternalLink className="text-zinc-500 hover:text-white cursor-pointer transition-colors" size={20} />
-                  </div>
-                </div>
+  <div className="text-xs font-mono text-brand-400 uppercase tracking-widest">Project {idx + 1}</div>
+  <div className="flex gap-4">
+    <Github className="text-zinc-500 hover:text-white cursor-pointer transition-colors" size={20} />
+    {project.liveLink ? (
+      <a href={project.liveLink} target="_blank" rel="noreferrer">
+        <ExternalLink className="text-zinc-500 hover:text-white cursor-pointer transition-colors" size={20} />
+      </a>
+    ) : (
+      <ExternalLink className="text-zinc-500 hover:text-white cursor-pointer transition-colors" size={20} />
+    )}
+  </div>
+</div>
                 <h3 className="text-3xl font-display font-bold mb-4 group-hover:text-brand-400 transition-colors">{project.title}</h3>
                 <p className="text-zinc-400 mb-8 leading-relaxed">
                   {project.description}
