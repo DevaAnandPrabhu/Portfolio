@@ -84,8 +84,6 @@ const DATA = {
       title: "AI Job Assistant",
       description: "An AI-powered job search platform for students to analyze resumes, browse live job listings, and receive personalized job alerts.",
       tech: ["React.js", "Flask", "Python", "Groq Ai", "JWT", "Flask-Bcrypt","SqlAlchemy"],
-      GitHub: https://github.com/DevaAnandPrabhu/ai-job-assistant
-      Live: https://ai-job-assistant-bay.vercel.app
       highlights: [
         "Built AI resume analyzer using Groq Llama 3 to generate ATS scores, skill gaps, and grammar feedback.",
         "Developed RESTful APIs with Flask for authentication, resume parsing, and job search.",
